@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.error {
+    color: tomato;
+}
+
+.loader {
+    animation: pulsate 1.5s infinite ease-out;
+    opacity: 0.5;
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
