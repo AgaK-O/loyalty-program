@@ -26,9 +26,6 @@ export const Transactions = () => {
             })
     }, []);
 
-    const rowNames = {
-        id: "id", date: "date", items: "items", amount: "amount"
-    }
 
     return (<div>
         {loading && <div className="container loader"><h2>Just a minute, we're loading your data.</h2></div>}
@@ -36,16 +33,16 @@ export const Transactions = () => {
         {data && <div>
             {data.map((item, i) => {
                 const { transaction, name } = item;
-                
-                return <div key={i + name}>
-                    <p>{name}</p>
-                    <Transaction data={rowNames} />
-                    {transaction.map((tr, i) => {
-                        // return <Transaction data={tr} key={`${i} ${tr.date}`} />
-                        return <TransactionByUser data={tr} key={`${i} ${tr.date}`} />
-                    })}
+                return <TransactionByUser data={item} key={i + name} />
+                // return <div key={i + name}>
+                //     <p>{name}</p>
+                //     <Transaction data={rowNames} />
+                //     {transaction.map((tr, i) => {
+                //         return <Transaction data={tr} key={`${i} ${tr.date}`} />
+                //         // return <TransactionByUser data={tr} key={`${i} ${tr.date}`} />
+                //     })}
 
-                </div>
+                // </div>
             })}
         </div>}
     </div>
