@@ -1,53 +1,75 @@
 [
     {
-        "name": "Albert Einstein",
+        "name": "Albert Johnson",
         "transaction": [
             {
                 "id": 1,
                 "date": "1/25/2023",
                 "items": 8,
-                "amount": "$68.86"
+                "price": {
+                    "amount": 68.86,
+                    "currency": "USD"
+                }
             },
             {
                 "id": 2,
                 "date": "2/16/2023",
                 "items": 2,
-                "amount": "$357.27"
+                "price": {
+                    "amount": 357.27,
+                    "currency": "USD"
+                }
             },
             {
                 "id": 3,
                 "date": "3/23/2023",
                 "items": 10,
-                "amount": "$43.34"
+                "price": {
+                    "amount": 43.34,
+                    "currency": "USD"
+                }
+                
             },
             {
                 "id": 4,
                 "date": "3/29/2023",
                 "items": 21,
-                "amount": "$80.45"
+                "price": {
+                    "amount": 80.45,
+                    "currency": "USD"
+                }
               }
         ]
     },
     {
-        "name": "Ada Lovelace",
+        "name": "Kathy Lovelace",
         "transaction": [
             {
                 "id": 5,
                 "date": "1/25/2023",
                 "items": 8,
-                "amount": "$168.86"
+                "price": {
+                    "amount": 168.86,
+                    "currency": "USD"
+                }
             },
             {
                 "id": 6,
                 "date": "2/16/2023",
                 "items": 2,
-                "amount": "$377.27"
+                "price": {
+                    "amount": 377.27,
+                    "currency": "USD"
+                }
             },
             {
                 "id": 7,
                 "date": "3/15/2023",
                 "items": 15,
-                "amount": "$117.96"
+                "price": {
+                    "amount": 117.96,
+                    "currency": "USD"
+                }
               }
         ]
     },
@@ -58,77 +80,110 @@
                 "id": 8,
                 "date": "1/25/2023",
                 "items": 8,
-                "amount": "$268.86"
+                "price": {
+                    "amount": 268.86,
+                    "currency": "USD"
+                }
             },
             {
                 "id": 9,
                 "date": "2/16/2023",
                 "items": 2,
-                "amount": "$352.27"
+                "price": {
+                    "amount": 352.27,
+                    "currency": "USD"
+                }
             },
             {
                 "id": 10,
                 "date": "3/19/2023",
                 "items": 10,
-                "amount": "$243.34"
+                "price": {
+                    "amount": 243.34,
+                    "currency": "USD"
+                }
             },
             {
                 "id": 11,
                 "date": "3/25/2023",
                 "items": 3,
-                "amount": "$89.07"
+                "price": {
+                    "amount": 89.07,
+                    "currency": "USD"
+                }
               }
         ]
     },
     {
-        "name": "Jim Carrey",
+        "name": "Jim Smith",
         "transaction": [
             {
                 "id": 12,
                 "date": "1/25/2023",
                 "items": 8,
-                "amount": "$61.86"
+                "price": {
+                    "amount": 61.86,
+                    "currency": "USD"
+                }
             },
             {
                 "id": 13,
                 "date": "2/16/2023",
                 "items": 2,
-                "amount": "$1357.27"
+                "price": {
+                    "amount": 1357.27,
+                    "currency": "USD"
+                }
             },
             {
                 "id": 14,
                 "date": "3/29/2023",
                 "items": 10,
-                "amount": "$413.34"
+                "price": {
+                    "amount": 413.34,
+                    "currency": "USD"
+                }
             }
         ]
     },
     {
-        "name": "Mata Hari",
+        "name": "Martha Harris",
         "transaction": [
             {
                 "id": 15,
                 "date": "1/25/2023",
                 "items": 8,
-                "amount": "$68.16"
+                "price": {
+                    "amount": 68.16,
+                    "currency": "USD"
+                }
             },
             {
                 "id": 16,
                 "date": "2/16/2023",
                 "items": 2,
-                "amount": "$157.27"
+                "price": {
+                    "amount": 37.27,
+                    "currency": "USD"
+                }
             },
             {
                 "id": 17,
-                "date": "5/29/2023",
-                "items": 10,
-                "amount": "$13.34"
+                "date": "3/29/2023",
+                "items": 1,
+                "price": {
+                    "amount": 143.64,
+                    "currency": "USD"
+                }
             },
             {
                 "id": 18,
-                "date": "5/19/2023",
-                "items": 10,
-                "amount": "$13.34"
+                "date": "3/19/2023",
+                "items": 1,
+                "price": {
+                    "amount": 73.34,
+                    "currency": "USD"
+                }
             }
         ]
     }

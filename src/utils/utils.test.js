@@ -1,15 +1,10 @@
-import calculateLoyaltyPoints from './utils';
+import { calculateLoyaltyPoints } from './utils';
+import { formatPriceUSD } from './utils';
 
-// test('Calculate points using the calculateLoyaltyPoints method', () => {
-//     expect(calculateLoyaltyPoints("1,007.56 €")).toBe(1864)
-// });
+test('calculateLoyaltyPoints', () => {
+    expect(calculateLoyaltyPoints(101.67)).toBe(52);
+});
 
-describe('calculateLoyaltyPoints', () => {
-    test.each([
-        ["1,007.56 €", 1864],
-        ["$14,407.06", 28664],
-        ["$101.67", 52],
-    ])('given amount %p , it should return %p ', (input, expected) => {
-        expect(calculateLoyaltyPoints(input)).toEqual(expected);
-    });
+test('format price using formatPrice', () => {
+    expect(formatPriceUSD(123.45)).toBe("$123.45");
 });

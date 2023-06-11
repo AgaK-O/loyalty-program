@@ -1,11 +1,24 @@
-export const calculateLoyaltyPoints = (amount) => {
+export const MONTH= ["January","February","March","April","May","June","July",
+            "August","September","October","November","December"];
 
-    let number = Math.trunc(Number(amount.replace(/[^0-9\.-]+/g, "")));
-    let doublePointsBase = number >= 100 ? (number - 100) : 0;
-    let singlePointsBase = (number >= 50) ? (number - doublePointsBase - 50) : 0;
-    console.log(`number ${number}, doublePointsBase ${doublePointsBase}, singlePointsBase ${singlePointsBase}`)
+export const calculateLoyaltyPoints = (amount) => {
+    let number = Math.trunc(amount);
+    let doublePointsBase = Math.max(number - 100, 0);
+    let singlePointsBase = Math.max(number - doublePointsBase - 50, 0);
 
     return ((doublePointsBase * 2) + singlePointsBase);
-}
+};
 
-// module.exports.calculateLoyaltyPoints = calculateLoyaltyPoints;
+const locale  = {
+    US: 'en-US',
+    DE: 'en-DE',
+    GB: 'en-GB'
+};
+
+export const formatPriceUSD = (amount) => {
+    return new Intl.NumberFormat(locale.US, { style: "currency", currency: 'USD' })
+        .format(
+            amount,
+        )
+};
+

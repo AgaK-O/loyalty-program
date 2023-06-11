@@ -1,0 +1,29 @@
+.rowLabels {
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 0;
+    margin: 0 0 30px;
+    text-decoration: none;
+    background: transparent;
+    color: #333333;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.open {
+    display: block;
+    padding: 0 0 30px 0;
+}
+
+.closed {
+    display: none;
+}

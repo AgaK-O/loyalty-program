@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Transaction } from './transaction';
 import { fetchTransactions } from '../service/fetch-transactions';
-import './transactions.css';
+import styles from './transactions.module.css';
 import { TransactionByUser } from './transaction-by-user';
 
 export const Transactions = () => {
@@ -12,12 +11,10 @@ export const Transactions = () => {
     useEffect(() => {
         fetchTransactions()
             .then((data) => {
-                console.log(data);
                 setData(data);
                 setError(false);
             })
             .catch((err) => {
-                console.log("err")
                 setError(err.message);
                 setData(null);
             })
@@ -28,21 +25,13 @@ export const Transactions = () => {
 
 
     return (<div>
-        {loading && <div className="container loader"><h2>Just a minute, we're loading your data.</h2></div>}
-        {error && <div className="container error"><h2>Something is wrong. {error}</h2></div>}
+        {loading && <div className={styles.loader}><h2>Just a minute, we're loading your data.</h2></div>}
+        {error && <div className={styles.error}><h2>Something is wrong. {error}</h2></div>}
         {data && <div>
+            <h1>Loyalty program points</h1>
             {data.map((item, i) => {
-                const { transaction, name } = item;
+                const { name } = item;
                 return <TransactionByUser data={item} key={i + name} />
-                // return <div key={i + name}>
-                //     <p>{name}</p>
-                //     <Transaction data={rowNames} />
-                //     {transaction.map((tr, i) => {
-                //         return <Transaction data={tr} key={`${i} ${tr.date}`} />
-                //         // return <TransactionByUser data={tr} key={`${i} ${tr.date}`} />
-                //     })}
-
-                // </div>
             })}
         </div>}
     </div>

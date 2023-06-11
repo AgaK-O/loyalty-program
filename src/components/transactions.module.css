@@ -1,17 +1,18 @@
-.container {
+.error {
+    color: tomato;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.error {
-    color: tomato;
-}
-
 .loader {
     animation: pulsate 1.5s infinite ease-out;
     opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 @keyframes pulsate {

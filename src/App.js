@@ -4,7 +4,7 @@ import { Transactions } from './components/transactions';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Transactions />
     </div>
   );
