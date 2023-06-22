@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { fetchTransactions } from '../service/fetch-transactions';
+import { fetchTransactions } from '../../services/fetch-transactions';
 import styles from './transactions.module.css';
-import { TransactionByUser } from './transaction-by-user';
+import { TransactionByUser } from '../transaction-by-user/transaction-by-user';
 
 export const Transactions = () => {
     const [data, setData] = useState(null);

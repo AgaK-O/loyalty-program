@@ -1,9 +1,9 @@
 import { useCallback, useState } from "react";
-import { calculateLoyaltyPoints } from "../utils/utils";
-import { formatPriceUSD } from "../utils/utils";
-import { MONTH } from "../utils/utils";
-import { TransactionRow } from "./transaction-row";
-import { NameCard } from "./name-card";
+import { calculateLoyaltyPoints } from "../../utils/utils";
+import { formatPriceUSD } from "../../utils/utils";
+import { MONTH } from "../../utils/utils";
+import { TransactionRow } from "../transaction-row/transaction-row";
+import { NameCard } from "../name-card/name-card";
 import styles from './transaction-by-user.module.css';
 
 export const TransactionByUser = ({ data }) => {
